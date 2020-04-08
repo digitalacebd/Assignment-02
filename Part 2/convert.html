@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Currency Converter</title>
+
+<script language="JavaScript">
+<!--
+function bdtConverter(){
+document.converter.dollar.value = document.converter.bdt.value * 0.012
+document.converter.rupee.value = document.converter.bdt.value * 0.84
+document.converter.rmb.value = document.converter.bdt.value * 0.082
+}
+function dollarConverter(){
+document.converter.bdt.value = document.converter.dollar.value * 84.96
+document.converter.rupee.value = document.converter.dollar.value * 71.58
+document.converter.rmb.value = document.converter.dollar.value * 7.00
+}
+function rupeeConverter(){
+document.converter.dollar.value = document.converter.rupee.value * 0.014
+document.converter.bdt.value = document.converter.rupee.value * 1.19
+document.converter.rmb.value = document.converter.rupee.value * 0.098
+}
+function rmbConverter(){
+document.converter.dollar.value = document.converter.rmb.value * 0.14
+document.converter.rupee.value = document.converter.rmb.value * 10.23
+document.converter.bdt.value = document.converter.rmb.value * 12.14
+}
+//-->
+</script>
+
+<body>
+
+<form name="converter">
+<table border="0">
+<tr>
+<td>BDT: </td><td><input type="text" name="bdt" onChange="bdtConverter()" /></td>
+</tr>
+<tr>
+<td>US Dollar: </td><td><input type="text" name="dollar" onChange="dollarConverter()" /></td>
+</tr>
+<tr>
+<td>Indian Rupee:</td><td><input type="text" name="rupee" onChange="rupeeConverter()" /></td>
+</tr>
+<tr>
+<td>Chinese RMB: </td><td><input type="text" name="rmb" onChange="rmbConverter()" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="button" value="Convert!" /></td>
+</tr>
+</table>
+</form>
+
+</head>
+</body>
+</html>
